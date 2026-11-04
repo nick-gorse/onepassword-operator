@@ -123,13 +123,30 @@ func BuildKubernetesSecretFromOnePasswordItem(
 		ObjectMeta: metav1.ObjectMeta{
 			Name:            formatSecretName(name),
 			Namespace:       namespace,
-			Annotations:     annotations,
+			Annotations:     BuildKubernetesSecretMetaData(item.Fields, annotations, allowEmptyValues),
 			Labels:          labels,
 			OwnerReferences: ownerRefs,
 		},
 		Data: BuildKubernetesSecretData(item.Fields, item.URLs, item.Files, allowEmptyValues),
 		Type: corev1.SecretType(secretType),
 	}
+}
+
+func BuildKubernetesSecretMetaData(
+	fields []model.ItemField, annotations map[string]string, allowEmptyValues bool,
+) map[string][]string {
+	if fieldAnnotations == nil {
+		fieldAnnotations = map[string]string{}
+	}
+
+	for i := 0; i < len(fields); i++ {
+		sectionId := fields[i].SectionId
+		if sectionId != "k8simportannotations" {
+			continue
+		}
+		fieldAnnotations[fields[i].Label] = fields[i].Value
+	}
+	return fieldAnnotations
 }
 
 func BuildKubernetesSecretData(
@@ -155,6 +172,10 @@ func BuildKubernetesSecretData(
 	}
 
 	for i := 0; i < len(fields); i++ {
+		sectionId := fields[i].SectionId
+		if sectionId != "k8simportannotations" {
+			continue
+		}
 		key := formatSecretDataName(fields[i].Label)
 		if key == "" {
 			log.Info(fmt.Sprintf("Skipping field with invalid label %q because it must match [-._a-zA-Z0-9]+", fields[i].Label))
