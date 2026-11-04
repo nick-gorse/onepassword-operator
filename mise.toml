@@ -1,0 +1,14 @@
+[task_config]
+includes = [
+        "git::https://git.olb42.com/olb042/mise-tasks.git//docker.toml?ref={{vars.tasks_ref | default(value='main')}}",
+        "git::https://git.olb42.com/olb042/mise-tasks.git//release.toml?ref={{vars.tasks_ref | default(value='main')}}"
+        ]
+
+[vars]
+# Published image name — defaults to the repo name; adjust if it differs.
+image = "onepassword-operator"
+
+[env]
+PROJECT_ROOT = "{{ config_root }}"
+# This repo's owner (nick-gorse) differs from the root default (olb42).
+REGISTRY_NAMESPACE = "olb042"
