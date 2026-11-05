@@ -194,6 +194,13 @@ func BuildKubernetesSecretData(
 			))
 			continue
 		}
+		if fields[i].Value == "0" {
+			log.Info(fmt.Sprintf(
+				"Skipping field with 0 value for label %q",
+				fields[i].Label,
+			))
+			continue
+		}		
 		secretData[key] = []byte(fields[i].Value)
 	}
 
