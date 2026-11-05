@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/1Password/connect-sdk-go/onepassword"
-	clienttesting "github.com/1Password/onepassword-operator/pkg/onepassword/client/testing"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/client/testing/mock"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	clienttesting "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/testing"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/testing/mock"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 const VaultTitleEmployee = "Employee"

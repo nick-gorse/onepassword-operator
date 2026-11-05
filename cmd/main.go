@@ -55,12 +55,12 @@ import (
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
-	onepasswordcomv1 "github.com/1Password/onepassword-operator/api/v1"
-	"github.com/1Password/onepassword-operator/internal/controller"
-	op "github.com/1Password/onepassword-operator/pkg/onepassword"
-	opclient "github.com/1Password/onepassword-operator/pkg/onepassword/client"
-	"github.com/1Password/onepassword-operator/pkg/utils"
-	"github.com/1Password/onepassword-operator/version"
+	onepasswordcomv1 "github.com/nick-gorse/onepassword-operator/api/v1"
+	"github.com/nick-gorse/onepassword-operator/internal/controller"
+	op "github.com/nick-gorse/onepassword-operator/pkg/onepassword"
+	opclient "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client"
+	"github.com/nick-gorse/onepassword-operator/pkg/utils"
+	"github.com/nick-gorse/onepassword-operator/version"
 	// +kubebuilder:scaffold:imports
 )
 

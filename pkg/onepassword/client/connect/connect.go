@@ -9,7 +9,7 @@ import (
 
 	"github.com/1Password/connect-sdk-go/connect"
 	"github.com/1Password/connect-sdk-go/onepassword"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 // Config holds the configuration for the Connect client.

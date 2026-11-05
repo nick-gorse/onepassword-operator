@@ -19,7 +19,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/1Password/onepassword-operator/pkg/logs"
+	"github.com/nick-gorse/onepassword-operator/pkg/logs"
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 )
 

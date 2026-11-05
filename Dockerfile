@@ -31,7 +31,7 @@ RUN --mount=type=cache,target=/go/pkg/mod \
     CGO_ENABLED=0 \
     GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH} \
     go build \
-    -ldflags "-X \"github.com/1Password/onepassword-operator/version.Version=$operator_version\"" \
+    -ldflags "-X \"github.com/nick-gorse/onepassword-operator/version.Version=$operator_version\"" \
     -o manager cmd/main.go
 
 # Use distroless as minimal base image to package the manager binary

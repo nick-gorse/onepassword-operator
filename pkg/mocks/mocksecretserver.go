@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 type TestClient struct {
