@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/1Password/connect-sdk-go/onepassword"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 	sdk "github.com/1password/onepassword-sdk-go"
 )
 

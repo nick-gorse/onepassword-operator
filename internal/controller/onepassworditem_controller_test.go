@@ -13,8 +13,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	onepasswordv1 "github.com/1Password/onepassword-operator/api/v1"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	onepasswordv1 "github.com/nick-gorse/onepassword-operator/api/v1"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 const (

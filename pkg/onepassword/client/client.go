@@ -7,9 +7,9 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"github.com/1Password/onepassword-operator/pkg/onepassword/client/connect"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/client/sdk"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/connect"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/sdk"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 // Client is an interface for interacting with 1Password items and vaults.

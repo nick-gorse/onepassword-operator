@@ -7,15 +7,15 @@ This is a standalone Go module that provides testing utilities for Kubernetes op
 To use this module in your project, add it as a dependency:
 
 ```bash
-go get github.com/1Password/onepassword-operator/pkg/testhelper@<commit-hash>
+go get github.com/nick-gorse/onepassword-operator/pkg/testhelper@<commit-hash>
 ```
 
 ### Basic Setup
 
 ```go
 import (
-    "github.com/1Password/onepassword-operator/pkg/testhelper/kube"
-    "github.com/1Password/onepassword-operator/pkg/testhelper/defaults"
+    "github.com/nick-gorse/onepassword-operator/pkg/testhelper/kube"
+    "github.com/nick-gorse/onepassword-operator/pkg/testhelper/defaults"
 )
 
 // Create a kube client for testing
@@ -89,7 +89,7 @@ namespace.LabelNamespace(ctx, map[string]string{
 ### System Utilities
 
 ```go
-import "github.com/1Password/onepassword-operator/pkg/testhelper/system"
+import "github.com/nick-gorse/onepassword-operator/pkg/testhelper/system"
 
 // Run shell commands
 output, err := system.Run("kubectl", "get", "pods")
@@ -104,7 +104,7 @@ err := system.ReplaceFile("source.yaml", "dest.yaml")
 ### Kind Integration
 
 ```go
-import "github.com/1Password/onepassword-operator/pkg/testhelper/kind"
+import "github.com/nick-gorse/onepassword-operator/pkg/testhelper/kind"
 
 // Load Docker image to Kind cluster
 kind.LoadImageToKind("my-image:latest")

@@ -1,4 +1,4 @@
-module github.com/1Password/onepassword-operator/pkg/testhelper
+module github.com/nick-gorse/onepassword-operator/pkg/testhelper
 
 go 1.24.0
 

@@ -9,7 +9,7 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: onepassword-operator
-repo: github.com/1Password/onepassword-operator
+repo: github.com/nick-gorse/onepassword-operator
 resources:
 - api:
     crdVersion: v1
@@ -17,6 +17,6 @@ resources:
   controller: true
   domain: onepassword.com
   kind: OnePasswordItem
-  path: github.com/1Password/onepassword-operator/api/v1
+  path: github.com/nick-gorse/onepassword-operator/api/v1
   version: v1
 version: "3"

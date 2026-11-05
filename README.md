@@ -4,7 +4,7 @@
 <div align="center">
   <h1>1Password Connect Kubernetes Operator</h1>
   <p>Integrate <a href="https://developer.1password.com/docs/connect">1Password Connect</a> with your Kubernetes Infrastructure</p>
-  <a href="https://github.com/1Password/onepassword-operator#-get-started">
+  <a href="https://github.com/nick-gorse/onepassword-operator#-get-started">
     <img alt="Get started" src="https://user-images.githubusercontent.com/45081667/226940040-16d3684b-60f4-4d95-adb2-5757a8f1bc15.png" height="37"/>
   </a>
 </div>
@@ -72,7 +72,7 @@ Refer to the [Usage Guide](USAGEGUIDE.md) for documentation on how to deploy and
 
 ## 💙 Community & Support
 
-- File an [issue](https://github.com/1Password/onepassword-operator/issues) for bugs and feature requests.
+- File an [issue](https://github.com/nick-gorse/onepassword-operator/issues) for bugs and feature requests.
 - Join the [Developer Slack workspace](https://developer.1password.com/joinslack).
 - Subscribe to the [Developer Newsletter](https://1password.com/dev-subscribe/).
 

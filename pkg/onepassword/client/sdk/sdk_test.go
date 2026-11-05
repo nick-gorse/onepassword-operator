@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	clienttesting "github.com/1Password/onepassword-operator/pkg/onepassword/client/testing"
-	clientmock "github.com/1Password/onepassword-operator/pkg/onepassword/client/testing/mock"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	clienttesting "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/testing"
+	clientmock "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client/testing/mock"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 	sdk "github.com/1password/onepassword-sdk-go"
 )
 

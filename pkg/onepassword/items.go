@@ -7,8 +7,8 @@ import (
 
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 
-	opclient "github.com/1Password/onepassword-operator/pkg/onepassword/client"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	opclient "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 var logger = logf.Log.WithName("retrieve_item")

@@ -7,12 +7,12 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/meta"
 
-	onepasswordv1 "github.com/1Password/onepassword-operator/api/v1"
-	kubeSecrets "github.com/1Password/onepassword-operator/pkg/kubernetessecrets"
-	"github.com/1Password/onepassword-operator/pkg/logs"
-	opclient "github.com/1Password/onepassword-operator/pkg/onepassword/client"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
-	"github.com/1Password/onepassword-operator/pkg/utils"
+	onepasswordv1 "github.com/nick-gorse/onepassword-operator/api/v1"
+	kubeSecrets "github.com/nick-gorse/onepassword-operator/pkg/kubernetessecrets"
+	"github.com/nick-gorse/onepassword-operator/pkg/logs"
+	opclient "github.com/nick-gorse/onepassword-operator/pkg/onepassword/client"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/utils"
 
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"

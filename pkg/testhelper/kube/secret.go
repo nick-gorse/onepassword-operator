@@ -15,7 +15,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/1Password/onepassword-operator/pkg/testhelper/system"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/system"
 )
 
 type Secret struct {

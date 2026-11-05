@@ -3,7 +3,7 @@ package op
 import (
 	"fmt"
 
-	"github.com/1Password/onepassword-operator/pkg/testhelper/system"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/system"
 )
 
 type Field string
