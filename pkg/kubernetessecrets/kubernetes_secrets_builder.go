@@ -194,9 +194,9 @@ func BuildKubernetesSecretData(
 			))
 			continue
 		}
-		if fields[i].Value == "0" {
+		if fields[i].Value == "1970-01-01" {
 			log.Info(fmt.Sprintf(
-				"Skipping field with 0 value for label %q",
+				"Skipping field with '1970-01-01' value for label %q",
 				fields[i].Label,
 			))
 			continue
