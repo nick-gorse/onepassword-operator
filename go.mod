@@ -1,15 +1,15 @@
-module github.com/1Password/onepassword-operator
+module github.com/nick-gorse/onepassword-operator
 
 go 1.24.0
 
 toolchain go1.26.10
 
 // In main go.mod, add this replace directive:
-replace github.com/1Password/onepassword-operator/pkg/testhelper => ./pkg/testhelper
+replace github.com/nick-gorse/onepassword-operator/pkg/testhelper => ./pkg/testhelper
 
 require (
 	github.com/1Password/connect-sdk-go v1.5.3
-	github.com/1Password/onepassword-operator/pkg/testhelper v0.0.0-00010101000000-000000000000
+	github.com/nick-gorse/onepassword-operator/pkg/testhelper v0.0.0-00010101000000-000000000000
 	github.com/1password/onepassword-sdk-go v0.3.1
 	github.com/go-logr/logr v1.4.3
 	github.com/onsi/ginkgo/v2 v2.22.0
