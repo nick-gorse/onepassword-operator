@@ -44,9 +44,9 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	onepasswordcomv1 "github.com/1Password/onepassword-operator/api/v1"
-	"github.com/1Password/onepassword-operator/pkg/mocks"
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	onepasswordcomv1 "github.com/nick-gorse/onepassword-operator/api/v1"
+	"github.com/nick-gorse/onepassword-operator/pkg/mocks"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 	// +kubebuilder:scaffold:imports
 )
 

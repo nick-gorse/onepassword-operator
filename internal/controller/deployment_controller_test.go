@@ -13,8 +13,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	onepasswordv1 "github.com/1Password/onepassword-operator/api/v1"
-	op "github.com/1Password/onepassword-operator/pkg/onepassword"
+	onepasswordv1 "github.com/nick-gorse/onepassword-operator/api/v1"
+	op "github.com/nick-gorse/onepassword-operator/pkg/onepassword"
 )
 
 const (
