@@ -12,7 +12,7 @@ import (
 	kubeValidate "k8s.io/apimachinery/pkg/util/validation"
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
 )
 
 const (

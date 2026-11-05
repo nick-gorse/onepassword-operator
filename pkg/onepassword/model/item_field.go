@@ -4,5 +4,5 @@ package model
 type ItemField struct {
 	Label string
 	Value string
-	SectionID []string
+	SectionID *string
 }

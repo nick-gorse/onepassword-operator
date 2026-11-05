@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/1Password/onepassword-operator/pkg/onepassword/model"
-	"github.com/1Password/onepassword-operator/pkg/utils"
+	"github.com/nick-gorse/onepassword-operator/pkg/onepassword/model"
+	"github.com/nick-gorse/onepassword-operator/pkg/utils"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -133,14 +133,18 @@ func BuildKubernetesSecretFromOnePasswordItem(
 }
 
 func BuildKubernetesSecretMetaData(
-	fields []model.ItemField, annotations map[string]string, allowEmptyValues bool,
-) map[string][]string {
+	fields []model.ItemField, fieldAnnotations map[string]string, allowEmptyValues bool,
+) map[string]string {
 	if fieldAnnotations == nil {
 		fieldAnnotations = map[string]string{}
 	}
 
 	for i := 0; i < len(fields); i++ {
-		sectionId := fields[i].SectionId
+		if fields[i].SectionID == nil {
+			continue
+		}
+		sectionId := *fields[i].SectionID
+		log.Info(fmt.Sprintf("SectionId is %q", sectionId))
 		if sectionId != "k8simportannotations" {
 			continue
 		}
@@ -172,10 +176,6 @@ func BuildKubernetesSecretData(
 	}
 
 	for i := 0; i < len(fields); i++ {
-		sectionId := fields[i].SectionId
-		if sectionId != "k8simportannotations" {
-			continue
-		}
 		key := formatSecretDataName(fields[i].Label)
 		if key == "" {
 			log.Info(fmt.Sprintf("Skipping field with invalid label %q because it must match [-._a-zA-Z0-9]+", fields[i].Label))
