@@ -201,10 +201,6 @@ func BuildKubernetesSecretData(
 			))
 			continue
 		}
-		log.Info(fmt.Sprintf(
-				"Adding field with value %q for label %q (use --allow-empty-values flag to include)",
-				fields[i].Value, fields[i].Label,
-			))
 		secretData[key] = []byte(fields[i].Value)
 	}
 
