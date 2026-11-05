@@ -78,8 +78,8 @@ func (i *Item) FromSDKItem(item *sdk.Item) {
 
 	for _, field := range item.Fields {
 		i.Fields = append(i.Fields, ItemField{
-			Label: field.Title,
-			Value: field.Value,
+			Label:     field.Title,
+			Value:     field.Value,
 			SectionID: field.SectionID,
 		})
 	}

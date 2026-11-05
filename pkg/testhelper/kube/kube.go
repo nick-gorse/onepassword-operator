@@ -29,7 +29,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 
-	"github.com/1Password/onepassword-operator/pkg/testhelper/defaults"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/defaults"
 )
 
 type TestConfig struct {
