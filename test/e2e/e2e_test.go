@@ -12,11 +12,11 @@ import (
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/1Password/onepassword-operator/pkg/testhelper/defaults"
-	"github.com/1Password/onepassword-operator/pkg/testhelper/kind"
-	"github.com/1Password/onepassword-operator/pkg/testhelper/kube"
-	"github.com/1Password/onepassword-operator/pkg/testhelper/op"
-	"github.com/1Password/onepassword-operator/pkg/testhelper/system"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/defaults"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/kind"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/kube"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/op"
+	"github.com/nick-gorse/onepassword-operator/pkg/testhelper/system"
 )
 
 const (
