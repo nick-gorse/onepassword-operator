@@ -144,7 +144,6 @@ func BuildKubernetesSecretMetaData(
 			continue
 		}
 		sectionId := *fields[i].SectionID
-		log.Info(fmt.Sprintf("SectionId is %q", sectionId))
 		if sectionId != "k8simportannotations" {
 			continue
 		}
@@ -176,6 +175,13 @@ func BuildKubernetesSecretData(
 	}
 
 	for i := 0; i < len(fields); i++ {
+		if fields[i].SectionID != nil {
+			sectionId := *fields[i].SectionID
+			if sectionId == "k8simportannotations" {
+				continue
+			}
+		}
+
 		key := formatSecretDataName(fields[i].Label)
 		if key == "" {
 			log.Info(fmt.Sprintf("Skipping field with invalid label %q because it must match [-._a-zA-Z0-9]+", fields[i].Label))
